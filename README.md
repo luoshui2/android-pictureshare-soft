@@ -38,7 +38,7 @@ android课设:图片分享软件。
 ## android后端
 ## app效果展示
 1. 主界面
-   是![image](./screen/pic1.png)
+2. ![image](./screen/pic1.png)
 3. 发布界面
    ![image](./screen/pic2.png)
 4. 个人界面
