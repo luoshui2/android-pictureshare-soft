@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--
+    注释说明：
+    shape形状，设置形状为：rectangle 长方形。
+    solid实体， android:color="#FFFFFF" 实体颜色为白色。
+    corners角落，设置组件的四个边脚
+    stroke设置边框的颜色为蓝色，android:color="@color/blue"
+    注意，这里的边框颜色可以更改为自己喜欢的颜色。
+     -->
+
+    <solid
+        android:color="#FFFFFF" >
+    </solid>
+
+    <corners
+        android:radius="3dp"
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp"
+
+        />
+    <stroke
+        android:width="3dip"
+        android:color="#000000"
+        />
+
+
+</shape>
+

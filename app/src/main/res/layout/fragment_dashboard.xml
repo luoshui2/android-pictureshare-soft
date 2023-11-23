@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dashboard_ch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.ui.dashboard.DashboardFragment">
+
+        <LinearLayout
+            android:id="@+id/send_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/write_content"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="输入标题"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ck_main_is_edit_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/write_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:checked="true"
+                android:text="添加图片" />
+
+            <com.lwkandroid.widget.ninegridview.NineGridView
+                android:id="@+id/ninegridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="提交"
+        android:textSize="24dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
