@@ -44,7 +44,7 @@ android课设:图片分享软件。
 1. 项目框架：springboot
 2. 服务器：阿里云
 3. 数据库：mysql8.0.24
-  1. 数据库关系图![image](./screen/pic7.png)
+  1. 数据库关系图<br>![image](./screen/pic7.png)
 5. 图片存储：在服务器上面，没有用OSS对象存储，路径为：/sourcepic（原图）、/thhpic(缩略图)（根目录）
 6. 项目包介绍
    1. connect_select:图片实体类
