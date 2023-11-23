@@ -11,6 +11,11 @@ android课设:图片分享软件。
 3. DataBase:数据库文件
 4. backProgram：后端项目
 5. 其他文件：android文件
+## 食用方法
+1. 不用账号登陆：在LoginActivity.java文件注释掉 login_in.setOnClickListener函数相应的部分
+2. 修改自己的服务器IP：api包下面的constants类修改
+3. 不能登陆、没有图片：服务器到期了
+4. 图片上传的位置为服务器的/sourcepic目录
 ## android前端
 1. android模板：Bottom Navigation Views Activity
 2. android库：
@@ -36,6 +41,11 @@ android课设:图片分享软件。
    5. home:首页界面
    6. notification:我的界面
 ## android后端
+1. 项目框架：springboot
+2. 服务器：阿里云
+3. 数据库：mysql8.0.24
+  1. 数据库关系图![image](./screen/pic7.png)
+5. 图片存储：在服务器上面，没有用OSS对象存储，路径为：/sourcepic（原图）、/thhpic(缩略图)（根目录）
 ## app效果展示
 1. 主界面<br>![image](./screen/pic1.png)
 2. 发布界面<br>![image](./screen/pic2.png)
