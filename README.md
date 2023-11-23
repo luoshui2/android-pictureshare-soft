@@ -39,11 +39,11 @@ android课设:图片分享软件。
 ## app效果展示
 1. 主界面
    是![image](./screen/pic1.png)
-2. 发布界面
+3. 发布界面
    ![image](./screen/pic2.png)
-3. 个人界面
+4. 个人界面
    ![image](./screen/pic4.png)
-4. 登陆界面
+5. 登陆界面
    ![image](./screen/pic5.png)
-5. 注册界面
+6. 注册界面
     ![image](./screen/pic6.png)
