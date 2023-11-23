@@ -37,8 +37,8 @@ android课设:图片分享软件。
    6. notification:我的界面
 ## android后端
 ## app效果展示
-1. 主界面![image](./screen/pic1.png)
-2. 发布界面![image](./screen/pic2.png)
-3. 个人界面![image](./screen/pic4.png)
-4. 登陆界面![image](./screen/pic5.png)
-5. 注册界面![image](./screen/pic6.png)
+1. 主界面<br>![image](./screen/pic1.png)
+2. 发布界面<br>![image](./screen/pic2.png)
+3. 个人界面<br>![image](./screen/pic4.png)
+4. 登陆界面<br>![image](./screen/pic5.png)
+5. 注册界面<br>![image](./screen/pic6.png)
