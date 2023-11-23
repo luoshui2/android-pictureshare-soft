@@ -1,0 +1,68 @@
+create table picture(
+id int not null auto_increment,
+name varchar(255),
+title varchar(255),
+usename varchar(255),
+type varchar(255),
+upload_date date,
+sourcepath varchar(255),
+smallpath varchar(255),
+primary key(id)
+);
+insert into picture(name,title,type,upload_date,sourcepath,smallpath) values('8a23f24272cf40dd8f9d673f8988a20d','初音未来','jpg','2023-10-1','F:/cs/imag/8a23f24272cf40dd8f9d673f8988a20d.jpg','F:/cs/im/8a23f24272cf40dd8f9d673f8988a20d.jpg');
+select * from picture;
+
+切换服务器和本机：
+1.app配置文件
+2.control的path
+//账号密码表
+create table user(
+usename varchar(255),
+password varchar(255),
+primary key(usename)
+);
+
+//一张图片的信息表
+create table picture(
+id int not null auto_increment,
+name varchar(255),
+title varchar(255),
+usename varchar(255),
+like_number int,
+collect_number int,
+download_number int,
+primary key(id),
+constraint con_infor foreign key (name) references pic_information(name),
+constraint con_check foreign key (usename) references user_information(usename ),
+);
+
+//图片的基本信息表
+create table pic_information(
+name varchar(255),
+type varchar(255),
+upload_date date,
+pic_path varchar(255),
+pic_url varchar(255),
+primary key(name)
+);
+
+//图片与用户的点赞关系表（M:N）
+create table pic_user(
+relation_id int not null auto_increment,
+pic_id int,
+user_id varchar(255),
+like_check boolean,
+collect_check boolean,
+primary key(relation_id),
+constraint con_pic foreign key (pic_id) references picture(id),
+constraint con_user foreign key(user_id) references user_information(usename)
+);
+
+
+//用户总的获赞数
+create table user_information(
+usename varchar(255),
+like_total int,
+collect_total int,
+primary key(usename)
+);
