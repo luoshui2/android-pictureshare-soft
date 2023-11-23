@@ -46,6 +46,23 @@ android课设:图片分享软件。
 3. 数据库：mysql8.0.24
   1. 数据库关系图![image](./screen/pic7.png)
 5. 图片存储：在服务器上面，没有用OSS对象存储，路径为：/sourcepic（原图）、/thhpic(缩略图)（根目录）
+6. 项目包介绍
+   1. connect_select:图片实体类
+   2. controller:url请求控制层
+   3. database_pic_information：数据库的pic_information表(包括了实体类，dao层，接口层，服务层)
+   4. database_picture：数据库的picture表
+   5. database_user：数据库的database_user表
+   6. database_user_information：数据库的database_user_information表
+   7. pic_user：数据库的pic_user表
+   8. file_upload:文件上传类
+   9. path:路径管理类
+   10. picload:图片加载类
+7. 主要的接口（controll层）
+   1. 账号密码
+   2. 图片上传
+   3. 图片信息获取
+   4. 分页查询图片的信息
+   5. 更新图片点赞、收藏、下载
 ## app效果展示
 1. 主界面<br>![image](./screen/pic1.png)
 2. 发布界面<br>![image](./screen/pic2.png)
